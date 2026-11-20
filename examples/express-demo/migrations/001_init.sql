@@ -1,0 +1,18 @@
+CREATE TABLE products (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(200) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE orders (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  customer_id INT NOT NULL,
+  total DECIMAL(10, 2) NOT NULL,
+  status VARCHAR(20) NOT NULL
+);
+
+CREATE TABLE order_items (
+  order_id INT NOT NULL,
+  product_id INT NOT NULL,
+  qty INT NOT NULL
+);

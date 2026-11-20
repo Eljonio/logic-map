@@ -1,0 +1,17 @@
+{
+  "name": "logic-map-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Logic Map \u2014 lets Claude Code control the map",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "logic-map-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/tools-list.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  }
+}
